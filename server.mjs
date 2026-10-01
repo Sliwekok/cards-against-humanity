@@ -9,7 +9,7 @@ import { Room, newRoomCode } from "./server/game.mjs";
 import { recordGame, recordRoundWin } from "./server/leaderboard.mjs";
 
 const dev = !process.argv.includes("--production");
-const port = Number(process.env.PORT) || 3000;
+const port = 3001;
 const hostname = "0.0.0.0"; // nasłuch w całej sieci lokalnej
 
 const app = next({ dev, hostname, port });
